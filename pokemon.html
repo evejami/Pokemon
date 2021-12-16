@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON</title>
+    <link rel="stylesheet" href="pokemon.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let contenedor = document.getElementById("contenedor");
+            for(let i=10016;i<10160;i++){
+                let nuevaim=document.createElement("img");
+                nuevaim.setAttribute("src","https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+i+".png");
+                contenedor.appendChild(nuevaim);
+            }
+        })
+    </script>
+</head>
+
+<body>
+        <div id="contenedor" class="contenedor"></div>
+</body>
+</html>
+
